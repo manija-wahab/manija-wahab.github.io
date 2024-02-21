@@ -1,0 +1,165 @@
+/* Reset default margin, padding, and font size for certain elements */
+html,
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* Styling for the generic box with id 'box' */
+#box {
+  background-color: white;
+  border: solid black 1px;
+}
+
+/* Grid layout for the main container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100vh 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'header header header header links links links links' 'gap gap gap gap gap gap gap gap' 'box1 box1 box1 box1 empty empty empty empty' 'box1 box1 box1 box1 empty empty empty empty' 'box1 box1 box1 box1 box2 box2 box2 box2' 'empty2 empty2 empty2 empty2 box2 box2 box2 box2' 'box3 box3 box3 box3 box2 box2 box2 box2' 'box3 box3 box3 box3 empty3 empty3 empty3 empty3' 'box3 box3 box3 box3 empty3 empty3 empty3 empty3' 'contain contain contain contain contain contain contain contain';
+}
+
+/* Styling for the header */
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the links section */
+.links {
+  grid-area: links;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+}
+
+/* Styling for buttons with class 'btn' */
+.btn {
+  padding: 5%;
+}
+
+/* Styling for the linkbox containing buttons */
+.linkbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Styling for the gap box */
+.gap {
+  grid-area: gap;
+}
+
+/* Styling for box1, empty, box2, empty2, box3, and empty3 */
+.box1 {
+  grid-area: box1;
+}
+
+.empty {
+  grid-area: empty;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.empty2 {
+  grid-area: empty2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.empty3 {
+  grid-area: empty3;
+}
+
+/* Styling for the contain box */
+.contain {
+  grid-area: contain;
+}
+
+/* Styling for heading level 3 */
+h3 {
+  font-size: 5vw;
+  padding: 5%;
+}
+
+/* Styling for heading level 1 with larger font size */
+h1 {
+  font-size: 10vw;
+}
+
+/* Media queries for responsiveness */
+
+/* Small devices (portrait phones) */
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;
+    grid-template-areas:
+      'header header header header header header header header'
+      'links links links links links links links links'
+      'gap gap gap gap gap gap gap gap'
+      'box1 box1 box1 box1 box1 box1 box1 box1'
+      'empty empty empty empty empty empty empty empty'
+      'box2 box2 box2 box2 box2 box2 box2 box2'
+      'empty2 empty2 empty2 empty2 empty2 empty2 empty2 empty2'
+      'box3 box3 box3 box3 box3 box3 box3 box3'
+      'empty3 empty3 empty3 empty3 empty3 empty3 empty3 empty3'
+      'contain contain contain contain contain contain contain contain';
+  }
+
+  h1 {
+    padding: 10%;
+    font-size: 15vw;
+    text-align: center;
+  }
+
+  .linkbox {
+    font-size: 10vw;
+  }
+}
+
+/* Small devices (landscape phones) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  /* Adjust styles for landscape phones */
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Adjust styles for tablets */
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Adjust styles for desktops */
+}
+
+/* Extra-large devices (large desktops) */
+@media only screen and (min-width: 1200px) {
+  /* Adjust styles for large desktops */
+}
+
+/* High-resolution devices (retina displays) */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  /* Adjust styles for high-resolution displays */
+}
