@@ -11,6 +11,10 @@ p {
   font-size: 16px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Custom fonts */
 
 @font-face {
@@ -44,6 +48,7 @@ h1 {
 
 body {
   background-color: lightpink;
+  overflow-x: hidden;
 }
 
 /* Remove underline from links */
@@ -55,6 +60,8 @@ a {
 /* Grid layout for the main container */
 
 .container {
+  width: 100%;
+  overflow: hidden;
   position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -86,6 +93,39 @@ a {
 /* Styling for buttons */
 
 .btn {
+  width: 50%;
+  margin: 2%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.45);
+  font-weight: bolder;
+  font-family: secondfont;
+  box-shadow: 0px 0px 20px 1px white;
+  background-color: rgb(255, 255, 255);
+}
+
+/* old button styling before adding responsiveness */
+
+/* .btn {
+  padding: 2%;
+  width: 40%;
+  min-height: 5%;
+  max-height: 10vh;
+  margin: 3%;
+  text-align: center;
+  font-size: 1.5vw; 
+  border-radius: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.45);
+  font-weight: bolder;
+  font-family: secondfont;
+  color: rgb(255, 182, 193);
+} */
+
+/* .btn {
   padding: 2vh;
   width: 30vh;
   min-height: 5%;
@@ -99,7 +139,7 @@ a {
   font-weight: bolder;
   font-family: secondfont;
   color: rgb(255, 182, 193);
-}
+} */
 
 /* Styling for the teleport button */
 
@@ -122,8 +162,9 @@ a {
 .btn2,
 .btn3,
 .btn4 {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 0px 20px 1px white;
+  padding: 5%;
+  font-size: 1rem;
+  color: lightpink;
 }
 
 /* Styling for the glass behind buttons */
@@ -246,6 +287,8 @@ a {
   box-shadow: rgb(255, 255, 255) 0rem 0rem 2rem 0.5rem;
 }
 
+/* old circle styles just in case */
+
 /* .circle1 {
   width: 20vw;
   height: 20vw;
@@ -280,9 +323,22 @@ a {
 
 /* Media queries for responsiveness */
 
-/* Adjusting styles for small devices (max-width: 400px) */
+/* Ajusting styles for smaller devices (max-width: 200px) */
 
-@media (max-width: 400px) {
+@media (max-width: 300px) {
+  /* .header {
+    padding-top: 20%;
+  }
+
+  .links {
+    margin-top: -20%;
+    max-height: 100%;
+  } */
+}
+
+/* Adjusting styles for small devices (max-width: 350px) */
+
+/* @media (max-width: 350px) {
   .btn {
     width: 20vh;
     font-size: 4vw;
@@ -296,14 +352,37 @@ a {
     padding: 2vh;
     font-size: 5vw;
   }
-}
+
+  .header {
+    height: fit-content;
+    padding-top: 5%;
+  }
+
+  .links {
+    margin-top: -30%;
+  }
+} */
 
 /* Small devices (max-width: 600px) */
 
 @media only screen and (max-width: 600px) {
   .container {
-    /* Adjusting grid layout for smaller screens */
+    grid-template-columns: 100% 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'header header header header'
+      'links links links links'
+      'box1 box1 box1 box1'
+      'box1 box1 box1 box1'
+      'box1 box1 box1 box1'
+      'box2 box2 box2 box2'
+      'box2 box2 box2 box2'
+      'box3 box3 box3 box3'
+      'box3 box3 box3 box3'
+      'contain contain contain contain';
+  }
 
+  /* .container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;
     grid-template-areas:
@@ -317,7 +396,7 @@ a {
       'box3 box3 box3 box3 box3 box3 box3 box3'
       'empty3 empty3 empty3 empty3 empty3 empty3 empty3 empty3'
       'contain contain contain contain contain contain contain contain';
-  }
+  } */
 
   /* Adjusting styles for smaller screens */
 
@@ -331,12 +410,76 @@ a {
   .teleport {
     font-size: 6vw;
   }
+
+  .btn {
+    margin: 3vw;
+    padding: 2%;
+    width: 60%;
+  }
+
+  .btn1,
+  .btn2,
+  .btn3,
+  .btn4 {
+    padding: 1vw;
+    font-size: 3.5vw;
+  }
+
+  .linksglass {
+    margin: 0;
+  }
+
+  h1 {
+    padding-bottom: 5%;
+  }
 }
 
-/* Medium devices (tablets) - min-width: 601px, max-width: 767px */
+/* Medium devices */
 
-@media only screen and (min-width: 601px) and (max-width: 767px) {
+@media only screen and (min-width: 601px) and (max-width: 899px) {
+  .container {
+    grid-template-columns: 100% 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'header header header header'
+      'links links links links'
+      'box1 box1 box1 box1'
+      'box1 box1 box1 box1'
+      'box1 box1 box1 box1'
+      'box2 box2 box2 box2'
+      'box2 box2 box2 box2'
+      'box3 box3 box3 box3'
+      'box3 box3 box3 box3'
+      'contain contain contain contain';
+  }
+  h1 {
+    margin-left: 0;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 15vw;
+  }
+
+  .linksglass {
+    margin: 0;
+  }
+
+  .btn1,
+  .btn2,
+  .btn3,
+  .btn4 {
+    font-size: 4vw;
+  }
+
+  .teleport {
+    font-size: 6vw;
+  }
+
   .btn {
+    margin: 5%;
+    width: 60%;
+  }
+
+  /* .btn {
     width: 20vh;
     font-size: 2vw;
   }
@@ -347,17 +490,19 @@ a {
 
   .teleport {
     padding: 1vh;
+  } */
+}
+
+@media screen and (min-width: 900px) and (max-width: 2000px) {
+  .btn1,
+  .btn2,
+  .btn3,
+  .btn4 {
+    font-size: 2vw;
   }
-}
 
-/* Large devices (desktops) - min-width: 768px, max-width: 991px */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-}
-
-/* Extra-large devices (large desktops) - min-width: 992px, max-width: 1199px */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-}
-
-/* High-resolution devices - min-width: 1200px, min-resolution: 192dpi */
-@media only screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+  .btn {
+    margin: 4%;
+    width: 60%;
+  }
 }
