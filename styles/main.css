@@ -343,7 +343,7 @@ a {
   border-radius: 0% 5% 5% 0%;
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.765),
     rgba(255, 255, 255, 0)
   );
   backdrop-filter: blur(10px);
@@ -364,7 +364,7 @@ a {
   border-radius: 0% 5% 5% 0%;
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.765),
     rgba(255, 255, 255, 0)
   );
   backdrop-filter: blur(10px);
@@ -385,7 +385,7 @@ a {
   border-radius: 0% 5% 5% 0%;
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.765),
     rgba(255, 255, 255, 0)
   );
   backdrop-filter: blur(10px);
@@ -412,9 +412,29 @@ img {
   font-family: thirdfont;
   font-size: 2rem;
   padding: 10%;
+  padding-top: 5%;
+  color: lightpink;
+  text-shadow: white 0px 0px 10px;
+  text-shadow: 3px 3px 2px #ffffff, -3px 3px 2px #ffffff, -3px -3px 0 #ffffff,
+    3px -3px 0 #ffffff;
+}
+
+.aboutMeTitle,
+.blogsTitle,
+.detailsTitle,
+.imageTitle {
+  font-family: newfont;
+  font-size: 4vw;
+  padding: 2rem 0rem 0rem 4rem;
+  padding-bottom: 0;
   color: rgb(255, 255, 255);
   opacity: 50%;
   text-shadow: rgb(0, 0, 0) 2px 2px 5px;
+}
+
+.aboutMe,
+.image {
+  font-size: 1.5rem;
 }
 
 #details,
@@ -442,7 +462,7 @@ img {
   border-radius: 0% 5% 5% 0%;
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.765),
     rgba(255, 255, 255, 0)
   );
   backdrop-filter: blur(10px);
