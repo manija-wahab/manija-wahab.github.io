@@ -7,12 +7,12 @@ body {
 
 @font-face {
   font-family: lemon;
-  src: url(/Fonts/LemonMilkMedium-mLZYV.otf);
+  src: url(/LemonMilkMedium-mLZYV.otf);
 }
 
 @font-face {
   font-family: lemon2;
-  src: url(/Fonts/LemonMilkLight-owxMq.otf);
+  src: url(/LemonMilkLight-owxMq.otf);
 }
 
 .container {
