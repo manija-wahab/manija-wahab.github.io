@@ -407,8 +407,7 @@ img {
 
 .details,
 .aboutMe,
-.image,
-.blogs {
+.image {
   font-family: thirdfont;
   font-size: 2rem;
   padding: 10%;
@@ -470,6 +469,26 @@ img {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.blog1 {
+  font-family: thirdfont;
+  color: lightpink;
+  text-shadow: white 0px 0px 10px;
+  text-shadow: 3px 3px 2px #ffffff, -3px 3px 2px #ffffff, -3px -3px 0 #ffffff,
+    3px -3px 0 #ffffff;
+  padding: 0;
+}
+
+.blogs {
+  font-family: thirdfont;
+  font-size: 2vw;
+  padding: 10%;
+  padding-top: 5%;
+  color: lightpink;
+  text-shadow: white 0px 0px 10px;
+  text-shadow: 3px 3px 2px #ffffff, -3px 3px 2px #ffffff, -3px -3px 0 #ffffff,
+    3px -3px 0 #ffffff;
 }
 
 /* old circle styles just in case */
