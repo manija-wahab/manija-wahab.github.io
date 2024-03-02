@@ -7,14 +7,12 @@ body {
 
 @font-face {
   font-family: lemon;
-  src: url('https://manija-wahab.github.io/blog/blog_1/LemonMilkMedium-mLZYV.otf')
-    format('opentype');
+  src: url('/fonts/LemonMilkMedium-mLZYV.otf') format('opentype');
 }
 
 @font-face {
   font-family: lemon2;
-  src: url('https://manija-wahab.github.io/blog/blog_1/LemonMilkLight-owxMq.otf')
-    format('opentype');
+  src: url('/fonts/LemonMilkLight-owxMq.otf') format('opentype');
 }
 
 .container {
