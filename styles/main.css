@@ -424,7 +424,7 @@ img {
 .detailsTitle,
 .imageTitle {
   font-family: newfont;
-  font-size: 4vw;
+  font-size: 6vw;
   padding: 2rem 0rem 0rem 4rem;
   padding-bottom: 0;
   color: rgb(255, 255, 255);
@@ -472,20 +472,10 @@ img {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-.blog1 {
-  font-family: thirdfont;
-  color: lightpink;
-  text-shadow: white 0px 0px 10px;
-  text-shadow: 3px 3px 2px #ffffff, -3px 3px 2px #ffffff, -3px -3px 0 #ffffff,
-    3px -3px 0 #ffffff;
-  padding: 0;
-}
-
 .blogs {
   font-family: thirdfont;
   font-size: 2vw;
   padding: 10%;
-  padding-top: 5%;
   color: lightpink;
   text-shadow: white 0px 0px 10px;
   text-shadow: 3px 3px 2px #ffffff, -3px 3px 2px #ffffff, -3px -3px 0 #ffffff,

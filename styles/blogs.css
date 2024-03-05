@@ -1,0 +1,92 @@
+h1 {
+  text-align: center;
+  padding: 5%;
+  font-size: 10vw;
+}
+
+h2 {
+  text-align: center;
+  padding: 0% 5% 0% 5%;
+  font-size: 7vw;
+}
+
+h3 {
+  text-align: center;
+  padding: 0% 5% 0% 5%;
+  font-size: 4vw;
+}
+
+p {
+  padding: 0% 5% 0% 5%;
+  font-size: 3vw;
+}
+
+@font-face {
+  font-family: font1;
+  src: url(/fonts/marola/MAROLA__.TTF);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(/fonts/LemonMilkLight-owxMq.otf);
+}
+
+@font-face {
+  font-family: font3;
+  src: url(/fonts/lemon-milk-font/LemonMilkBold-gx2B3.otf);
+}
+
+@font-face {
+  font-family: font4;
+  src: url(/fonts/LemonMilkMedium-mLZYV.otf);
+}
+
+/* Identity Values CSS */
+
+/* Learning Plan CSS */
+
+/* Emotional Intelligence CSS */
+
+body {
+  background: radial-gradient(#85d6ef, pink, rgb(124, 223, 222));
+}
+
+h1 {
+  font-family: font1;
+  color: white;
+  text-shadow: #2b93b3 0px 0px 50px;
+}
+
+h3 {
+  font-family: font3;
+  color: white;
+  text-shadow: #dade00 0px 0px 30px;
+}
+
+p {
+  font-size: 2.5vw;
+  font-family: font4;
+  text-align: center;
+  color: white;
+  padding: 8% 8% 8% 8%;
+  margin: 10% 10%;
+  background-color: white;
+  border-radius: 0% 5% 5% 0%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.441),
+    rgba(44, 51, 255, 0.45)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* p {
+  font-family: font4;
+  text-align: center;
+  color: white;
+  text-shadow: #dade00 0px 0px 20px;
+} */
