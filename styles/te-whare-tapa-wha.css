@@ -59,3 +59,9 @@ td {
   color: white;
   font-family: font2;
 }
+
+ul {
+  list-style-position: outside;
+  margin: 0;
+  padding-left: 15px;
+}
