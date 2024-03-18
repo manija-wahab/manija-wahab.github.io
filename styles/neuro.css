@@ -1,0 +1,74 @@
+/* 
+╔═════════════════════╗
+║   Neuroplasticity   ║
+╚═════════════════════╝
+*/
+
+body {
+  background: url(https://wallpapers-clan.com/wp-content/uploads/2024/02/beautiful-fantasy-landscape-desktop-wallpaper-preview.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* 
+╔═══════════╗
+║   Fonts   ║
+╚═══════════╝
+*/
+
+@font-face {
+  font-family: font1;
+  src: url(/fonts/star7/STAR7.ttf);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(/fonts/made_tommy_soft/MADE\ Tommy\ Soft\ Black\ PERSONAL\ USE.otf);
+}
+
+/* 
+╔══════════╗
+║   Text   ║
+╚══════════╝
+*/
+
+h1 {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 8vw;
+  font-family: font1;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.63);
+  text-shadow: rgb(255, 197, 110) 0px 0px 10px;
+}
+
+h2 {
+  margin: 5% 5% 5% 10%;
+  font-size: 3vw;
+  font-family: font2;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.683);
+  text-shadow: rgb(64, 181, 224) 0px 0px 5px;
+}
+
+h3 {
+  margin: 0 8%;
+  padding: 5%;
+  text-align: center;
+  font-size: 2vw;
+  font-family: font2;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.719);
+  text-shadow: rgb(255, 197, 110) 0px 0px 10px;
+  border: white 0.1rem solid;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  border-radius: 20px;
+  box-shadow: rgb(255, 197, 110) 0px 0px 10px;
+}
