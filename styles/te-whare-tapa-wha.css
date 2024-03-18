@@ -1,0 +1,61 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  background: linear-gradient(
+    40deg,
+    rgb(82, 196, 235),
+    rgb(119, 236, 181),
+    rgb(255, 255, 255)
+  );
+  overflow-x: hidden;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: font1;
+  src: url(/fonts/chistoso/Chistoso-Regular.ttf);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(/fonts/LemonMilkMedium-mLZYV.otf);
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+  color: white;
+  font-family: font1;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.285);
+}
+
+table {
+  margin: 0 2rem 5rem 2rem;
+  table-layout: fixed;
+  border-spacing: 1px;
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.311);
+  color: white;
+  font-family: font2;
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding: 1rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.285);
+}
+
+td {
+  font-size: 0.9rem;
+  border: solid #ffffff00 1px;
+  background-color: rgba(0, 0, 0, 0.112);
+  padding: 1rem;
+  color: white;
+  font-family: font2;
+}
