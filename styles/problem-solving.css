@@ -1,0 +1,500 @@
+/* 
+╔════════════════════╗
+║   Reset settings   ║
+╚════════════════════╝
+*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+/* 
+╔═══════════╗
+║   Fonts   ║
+╚═══════════╝
+*/
+
+@font-face {
+  font-family: font1;
+  src: url(/fonts/rainyhearts/rainyhearts.ttf);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(/fonts/made_tommy_soft/MADE\ Tommy\ Soft\ Black\ PERSONAL\ USE.otf);
+}
+
+@font-face {
+  font-family: font3;
+  src: url(/fonts/lemon-milk-font/LemonMilkBold-gx2B3.otf);
+}
+
+/* 
+╔════════════════╗
+║   Background   ║
+╚════════════════╝
+*/
+
+.bg {
+  z-index: -1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://64.media.tumblr.com/2598e9c7a9b5365d9612f4cb82f52271/797b667ceda29300-c2/s500x750/aa8bbc0929ff5ed6f51adf196c497d40b10efd7a.gifv);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: lightpink;
+}
+
+/* 
+╔══════════╗
+║   Card   ║
+╚══════════╝
+*/
+
+.cardContain {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgContain {
+  height: 100%;
+  width: 100%;
+  background-image: url(/images/tumblr_d8059bfce0c3061457d5786dd8898c68_776c9aa1_540.webp);
+  background-position: center;
+  background-size: cover;
+  margin: 0 1vw 0 1vw;
+}
+
+.card {
+  width: 80%;
+  height: 78%;
+  box-sizing: border-box;
+  padding: 3rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.heading {
+  width: 100%;
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-family: font2;
+  font-size: 4.5vw;
+  color: rgb(255, 199, 220);
+}
+
+h2 {
+  font-family: font1;
+  font-size: 4vw;
+  font-weight: 800;
+  color: rgb(181, 190, 255);
+}
+
+/* 
+╔═════════════╗
+║   Section   ║
+╚═════════════╝
+*/
+
+.section,
+.section2,
+.section3,
+.section4 {
+  display: flex;
+  height: 100vh;
+  max-width: 100%;
+  width: 100%;
+}
+
+.leftWrapper,
+.leftWrapper2,
+.leftWrapper3,
+.leftWrapper4 {
+  width: 50%;
+  padding: 3rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.rightWrapper,
+.rightWrapper2,
+.rightWrapper3,
+.rightWrapper4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 50%;
+}
+
+/* .gifWrapper {
+} */
+
+.gif,
+.gif2,
+.gif3,
+.gif4 {
+  background-color: rgb(198, 157, 211);
+  aspect-ratio: 1/1;
+  max-width: 100%;
+  width: 15rem;
+  margin: 2rem;
+  height: auto;
+  border-radius: 20px;
+}
+
+.question,
+.question2,
+.question3,
+.question4 {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.answer,
+.answer2,
+.answer3,
+.answer4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+h3 {
+  font-family: font1;
+  font-size: 3vw;
+  color: rgb(181, 190, 255);
+  padding: 2rem;
+}
+
+p {
+  color: rgb(255, 199, 220);
+  font-size: 1.2vw;
+  font-weight: lighter;
+  max-width: 100%;
+  margin: 3rem;
+  font-family: font3;
+}
+
+.gif {
+  background-image: url(https://i.pinimg.com/originals/4f/5b/8d/4f5b8d2b1a2af22a342b04255748c610.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.gif2 {
+  background-image: url(https://media.tenor.com/a8qMFvt-p6kAAAAM/sailor-moon-anime.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.gif3 {
+  background-image: url(https://i.pinimg.com/originals/59/de/1d/59de1d22b3630a43486c62bb08a36503.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.gif4 {
+  background-image: url(https://i.pinimg.com/originals/81/00/21/81002108d98cd5721029a5cee1de238a.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+p {
+  overflow: hidden;
+}
+
+p {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+p::-webkit-scrollbar {
+  display: none;
+}
+
+/* 
+╔═══════════════════╗
+║   Media Queries   ║
+╚═══════════════════╝
+*/
+
+@media only screen and (max-width: 430px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .heading {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 7vw;
+    margin-bottom: 3vw;
+  }
+
+  .imgContain {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .section,
+  .section2,
+  .section3,
+  .section4 {
+    flex-direction: column;
+  }
+
+  .question,
+  .question2,
+  .question3,
+  .question4 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .gif,
+  .gif2,
+  .gif3,
+  .gif4 {
+    width: auto;
+    height: 100%;
+  }
+
+  .gifWrapper,
+  .gifWrapper2,
+  .gifWrapper3,
+  .gifWrapper4 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .leftWrapper,
+  .leftWrapper2,
+  .leftWrapper3,
+  .leftWrapper4 {
+    width: 100%;
+    height: 50%;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .answer,
+  .answer2,
+  .answer3,
+  .answer4 {
+    height: 100%;
+    width: 100%;
+    padding: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .rightWrapper,
+  .rightWrapper2,
+  .rightWrapper3,
+  .rightWrapper4 {
+    width: 100%;
+    height: 50%;
+  }
+
+  h3 {
+    padding: 1rem;
+  }
+
+  p {
+    font-size: 2.5vw;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  p {
+    overflow: hidden;
+  }
+
+  p {
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  p::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Small Devices (Tablets) */
+@media only screen and (min-width: 431px) and (max-width: 767.98px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .heading {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 7vw;
+    margin-bottom: 3vw;
+  }
+
+  .imgContain {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .section,
+  .section2,
+  .section3,
+  .section4 {
+    flex-direction: column;
+  }
+
+  .question,
+  .question2,
+  .question3,
+  .question4 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .gif,
+  .gif2,
+  .gif3,
+  .gif4 {
+    height: auto;
+    width: 100%;
+  }
+
+  .gifWrapper,
+  .gifWrapper2,
+  .gifWrapper3,
+  .gifWrapper4 {
+    max-width: 100%;
+    max-height: 100%;
+    width: 50%;
+    height: 100%;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .leftWrapper,
+  .leftWrapper2,
+  .leftWrapper3,
+  .leftWrapper4 {
+    width: 100%;
+    height: 50%;
+    flex-direction: row;
+  }
+
+  .rightWrapper,
+  .rightWrapper2,
+  .rightWrapper3,
+  .rightWrapper4 {
+    width: 100%;
+    height: 50%;
+  }
+
+  .answer,
+  .answer2,
+  .answer3,
+  .answer4 {
+    height: 100%;
+  }
+
+  h3 {
+    font-size: 4vw;
+  }
+
+  p {
+    font-size: 1.5vw;
+  }
+
+  p {
+    overflow: hidden;
+  }
+
+  p {
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  p::-webkit-scrollbar {
+    display: none;
+  }
+}
