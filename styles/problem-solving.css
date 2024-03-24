@@ -48,7 +48,7 @@ p {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-image: url(https://64.media.tumblr.com/2598e9c7a9b5365d9612f4cb82f52271/797b667ceda29300-c2/s500x750/aa8bbc0929ff5ed6f51adf196c497d40b10efd7a.gifv);
+  background-image: url(/images/Gifs-Sailor/tumblr_2598e9c7a9b5365d9612f4cb82f52271_aa8bbc09_500.webp);
   background-size: cover;
   background-attachment: fixed;
   background-color: lightpink;
@@ -230,25 +230,25 @@ p {
 }
 
 .gif {
-  background-image: url(https://i.pinimg.com/originals/4f/5b/8d/4f5b8d2b1a2af22a342b04255748c610.gif);
+  background-image: url(/images/Gifs-Sailor/4f5b8d2b1a2af22a342b04255748c610.gif);
   background-size: cover;
   background-position: center;
 }
 
 .gif2 {
-  background-image: url(https://media.tenor.com/a8qMFvt-p6kAAAAM/sailor-moon-anime.gif);
+  background-image: url(/images/Gifs-Sailor/sailor-moon-anime.gif);
   background-size: cover;
   background-position: center;
 }
 
 .gif3 {
-  background-image: url(https://i.pinimg.com/originals/59/de/1d/59de1d22b3630a43486c62bb08a36503.gif);
+  background-image: url(/images/Gifs-Sailor/59de1d22b3630a43486c62bb08a36503.gif);
   background-size: cover;
   background-position: center;
 }
 
 .gif4 {
-  background-image: url(https://i.pinimg.com/originals/81/00/21/81002108d98cd5721029a5cee1de238a.gif);
+  background-image: url(/images/Gifs-Sailor/81002108d98cd5721029a5cee1de238a.gif);
   background-size: cover;
   background-position: center;
 }
