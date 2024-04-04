@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/tic-tac-toe.css" />
+  </head>
+
+  <body>
+    <h1>Tic-Tac-Toe</h1>
+    <br />
+    <div class="container">
+      <table>
+        <tr>
+          <td id="a1"></td>
+          <td id="a2"></td>
+          <td id="a3"></td>
+        </tr>
+        <tr>
+          <td id="b1"></td>
+          <td id="b2"></td>
+          <td id="b3"></td>
+        </tr>
+        <tr>
+          <td id="c1"></td>
+          <td id="c2"></td>
+          <td id="c3"></td>
+        </tr>
+      </table>
+    </div>
+
+    <br />
+    <h2 id="subtitle">Click on a cell to start!</h2>
+    <div id="resetContain">
+      <h2 id="winText">
+        Yaaaay you won!! <button id="reset">Restart Game</button>
+      </h2>
+      <h2 id="loseText">
+        You lost :C <button id="reset">Restart Game</button>
+      </h2>
+    </div>
+    <script type="module" src="/scripts/tic-tac-toe.js"></script>
+  </body>
+</html>
