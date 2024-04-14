@@ -9,6 +9,10 @@ p {
   margin: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: rgb(255, 255, 255);
   background-image: url(https://img.freepik.com/free-vector/realistic-moving-neon-lights-background_23-2148995790.jpg?w=900&t=st=1712833221~exp=1712833821~hmac=d78da42e47e267fe4c85e7f35454524ba8f1c1c44c7e8cf534bfb76659f469dd);

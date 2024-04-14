@@ -30,15 +30,15 @@ document.querySelectorAll('.section').forEach((section) => {
   })
 })
 
-gsap.from(body, {
-  x: 1000,
-  rotation: 90,
-  scrollTrigger: {
-    trigger: section,
-    start: 'top bottom',
-    end: 'bottom 80%',
-    scrub: 3,
-    markers: false,
-    anticipatePin: 1,
-  },
-})
+// gsap.from(body, {
+//   x: 1000,
+//   rotation: 90,
+//   scrollTrigger: {
+//     trigger: section,
+//     start: 'top bottom',
+//     end: 'bottom 80%',
+//     scrub: 3,
+//     markers: false,
+//     anticipatePin: 1,
+//   },
+// })

@@ -9,6 +9,10 @@ p {
   margin: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: rgb(255, 255, 255);
   background-image: url(/images/7343142.jpg);
