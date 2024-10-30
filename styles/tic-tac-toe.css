@@ -34,11 +34,21 @@ body {
   src: url(/fonts/sn-pro-font-family-1712119266-0/SNPro-Heavy-BF65efc64e7fcf0.otf);
 }
 
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  gap: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
 .container {
   aspect-ratio: 1/1;
-  width: 20rem;
-  height: 20rem;
-  margin: 0% 30% 0% 30%;
+  height: 70%;
 }
 
 table {
@@ -48,7 +58,7 @@ table {
   height: 100%;
   table-layout: fixed;
   font-family: font2;
-  border-spacing: 10px;
+  border-spacing: calc(0.5vh + 0.5vw);
 }
 
 tr {
@@ -62,34 +72,36 @@ td {
   box-sizing: border-box;
   aspect-ratio: 1/1;
   text-align: center;
-  font-size: 400%;
-  border-radius: 25px;
+  font-size: 10vh;
+  border-radius: calc(1vh + 1vw);
   background-color: rgba(255, 255, 255, 0.441);
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0)
   );
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(calc(1vh + 1vw));
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  box-shadow: 0 0 calc(0.5vh + 0.5vw) rgba(0, 0, 0, 0.37);
+  box-sizing: border-box;
 }
 
 h1,
 h2 {
-  padding: 2rem;
   text-align: center;
   font-family: font1;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: calc(3vh + 3vw);
   text-shadow: rgb(255, 142, 242) 0px 0px 10px;
 }
 
 h2 {
   font-family: font1;
+  font-size: calc(2vh + 2vw);
+
   text-shadow: rgb(152, 233, 255) 0px 0px 10px;
 }
 
@@ -114,7 +126,7 @@ button {
   background-color: rgb(255, 255, 255);
   border: 1px solid rgba(255, 255, 255, 0.18);
   margin-left: 1rem;
-  font-size: 1rem;
+  font-size: calc(1vh + 1vw);
   padding: 1vw 2vw;
   border-radius: 10px;
   color: rgb(154, 152, 255);
